@@ -87,7 +87,7 @@ def colCheck(i):
   elif (box1 == box2 and box1 != ""):
     if (box1 == box3):
       if (box1 == "X"):
-        print("Whatever. you're fucking cheating.")
+        print("You win!")
       else:
         print("Computer wins.")
       return 3
@@ -296,7 +296,7 @@ for i in range(3):
   row.append("")
   board.append(row)
 
-# 2p or vs com
+# random start
 player = 0
 flip = random.randint(0, 1)
 
@@ -331,6 +331,7 @@ while winCheck():
         row = arr[0]
         col = arr[1]
     else:
+      #check if can immediately win
       for i in range(3):
         if (rowCheck(i) == 2):
           close = True
