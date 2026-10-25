@@ -272,7 +272,7 @@ def randCorner():
 
 def randEdge():
   arr = []
-  possibles = [(0, 1), (1, 0), (0, 1), (2, 1)]
+  possibles = [(0, 1), (1, 0), (1, 2), (2, 1)]
   random.shuffle(possibles)
   for row, col in possibles:
     if board[row][col] == "":
